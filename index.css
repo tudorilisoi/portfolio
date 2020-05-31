@@ -49,6 +49,26 @@ h1, h2, h3, h4 {
 
 /* layout */
 
-.left-sidebar {
-    width: 26vw;
+.columns-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.side-column {
+    flex: 1;
+    padding: 2vw;
+    padding-top: 0;
+    display: none;
+}
+
+.main-column {
+    flex: 3;
+    padding-top: 0;
+    padding: 5vw;
+}
+
+@media only screen and (min-width: 600px) {
+    .side-column {
+        display: block;
+    }
 }
